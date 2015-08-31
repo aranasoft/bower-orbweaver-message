@@ -1,0 +1,29 @@
+{
+  "name": "orbweaver-message",
+  "version": "0.102.0",
+  "homepage": "https://github.com/aranasoft/bower-orbweaver-message",
+  "authors": [
+    "Arana Software <info@aranasoft.com>"
+  ],
+  "description": "Orbweaver module for displaying UI messages",
+  "main": "orbweaver-message.js",
+  "keywords": [
+    "orbweaver",
+    "angular",
+    "rest",
+    "messaging",
+    "toastr"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.7",
+    "toastr": ">=2.1.2"
+  },
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
