@@ -1,6 +1,6 @@
 {
   "name": "orbweaver-message",
-  "version": "0.102.0",
+  "version": "0.102.1",
   "description": "Orbweaver module for displaying UI messages",
   "main": "index.js",
   "scripts": {

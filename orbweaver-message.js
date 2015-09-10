@@ -1,3 +1,9 @@
+/**
+ * orbweaver v0.102.1
+ * @copyright 2013-2015 Arana Software <info@aranasoft.com>. https://github.com/aranasoft/orbweaver
+ * @license BSD-3-Clause
+ */
+
 (function (window, angular, undefined) {
   'use strict';
 
