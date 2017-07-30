@@ -1,6 +1,6 @@
 /**
- * orbweaver v0.102.1
- * @copyright 2013-2015 Arana Software <info@aranasoft.com>. https://github.com/aranasoft/orbweaver
+ * orbweaver v1.0.0-beta.1
+ * @copyright 2013-2017 Arana Software <info@aranasoft.com>. https://github.com/aranasoft/orbweaver
  * @license BSD-3-Clause
  */
 
@@ -8,6 +8,10 @@
   'use strict';
 
   var orbweaver = angular.module('orbMessage', []);
+
+  orbweaver.factory('toastr', ['$window', function($window) {
+    return $window.toastr;
+  }]);
 
   orbweaver.constant('orbToastrOptions', {
     "closeButton": true,
@@ -24,7 +28,7 @@
     "hideMethod": "fadeOut"
   });
 
-  orbweaver.factory("orbMessageService", ['$rootScope', '$timeout', 'orbToastrOptions', function ($rootScope, $timeout, orbToastrOptions) {
+  orbweaver.factory("orbMessageService", ['toastr', 'orbToastrOptions', function (toastr, orbToastrOptions) {
     toastr.options = orbToastrOptions;
 
     return {
